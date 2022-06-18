@@ -11,7 +11,92 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  border: 1px black;
+}
+
+.Nav {
+  display: flex;
+  /* max-width: 550px; */
+  width: 100%;
+  height: 80px;
+  background-color: #f55a5a;
+  align-items: center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: auto;
+  padding-left: 20px;
+  /* position: relative; */
+  /* align-content: center; */
+  color: white;
+  gap: 1em;
+
+}
+
+.hr {
+  height:2px;border-width:0;
+  color: #F5F5F5;
+  background-color: #F5F5F5;
+}
+
+.Locations {
+  padding: 20px 20px 50px 50px;
+}
+
+.Location {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+}
+
+.Location--image {
+  max-width: 125px;
+  max-height: 168px;
+  border-radius: 10px;
+}
+
+.Location--info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px 10px 20px;
+}
+
+.Location--topline {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.Location--topline .country {
+  font-family: 'Inter';
+  font-weight: bold;
+  color: #2B283A;
+}
+
+.Location .here_icon {
+  width: 10px;
+  height: 15px;
+}
+
+.Location .link {
+  font-size: smaller;
+  color: #918E9B;
+}
+
+.Location--spot {
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+
+.Location--date {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.Location--description {
+  font-size: small;
 }
